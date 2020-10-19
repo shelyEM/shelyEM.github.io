@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+  }
+  main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+  }
+  
+  main.independent{
+    background-color: #bcbcbc;
+  }
+
+  main.independent h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 170px;
+    margin-top: -430px;
+  }
+
+  a.independent{
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: -160px;
+  }
+
+  nav.independent {
+    position:  absolute;
+    bottom: 50px;
+    left: 40px;
+  }
+
+  nav.independent ul {
+    background-color: #0066ff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    list-style-type: none;
+  }
+
+  nav.independent ul li a {
+    color: black;  
+    text-decoration: none;
+  }
+
+  nav.independent ul li a:hover { 
+    font: italic 1em "Roboto", sans-serif;
+    font-weight: 300;
+   }
+
+   nav.independent ul li a:visited { 
+    font: italic 1em "Roboto", sans-serif;
+    border-bottom: 1px solid black;
+    font-weight: 300;
+   }
+
+  main.luncheon {
+    background-color: #ff9574;
+    background-image: url("p1-images/luncheon.jpg");
+    background-size: 43% auto;
+    background-repeat: no-repeat;
+    background-position: 60% bottom;
+  }
+  
+  main.luncheon h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 170px;
+    margin-top: -500px;
+  }
+  
+  main.luncheon p {
+    background-color: #0066ff;
+    border: 1px solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 400px;
+    font-size: 16px;
+    margin-top: -440px;
+    margin-right:100px; 
+  }
+  
+  nav.luncheon {
+    position:  absolute;
+    bottom: 0px;
+    right: 60px;
+  }
+
+  nav.luncheon ul {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    list-style-type: none;
+  }
+
+  nav.luncheon ul li a {
+    color: black;  
+    text-decoration: none;
+  }
+
+  nav.luncheon ul li a:hover { 
+    font: italic 1em "Roboto", sans-serif;
+    font-weight: 300;
+   }
+
+   nav.luncheon ul li a:visited { 
+    font: italic 1em "Roboto", sans-serif;
+    border-bottom: 1px solid black;
+    font-weight: 300;
+   }
+
+   main.toomuch {
+    background-color: #00ec7b;
+    background-image: url("p1-images/toomuch.jpg");
+    background-size: 35% auto;
+    background-repeat: no-repeat;
+    background-position:  bottom center;
+    position: relative;
+  }
+  
+  .toomuch h1 {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 170px;
+    margin-top: -500px;
+  }
+  
+  .description article {
+    background-color: #e5cf00;
+    border-right:1px solid black;
+    border-top:1px solid black;
+    border-left:1px solid black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 250px;
+    font-size: 16px;
+    margin-top:-50px;
+    position: relative;
+  }
+
+  .description .name{
+    display:inline-block;
+    background-color: #ff9574;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 250px;
+    font-size: 16px;
+    margin-right:110px;
+    position: relative;
+  }
+  
+  nav.toomuch {
+    position:  absolute;
+    top: 500px;
+    left: 180px;
+  }
+
+  nav.toomuch ul {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    list-style-type: none;
+  }
+
+  nav.toomuch ul li a {
+    color: black;  
+    text-decoration: none;
+  }
+
+  nav.toomuch ul li a:hover { 
+    font: italic 1em "Roboto", sans-serif;
+    font-weight: 300;
+   }
+
+   nav.toomuch ul li a:visited { 
+    font: italic 1em "Roboto", sans-serif;
+    border-bottom: 1px solid black;
+    font-weight: 300;
+   }
+  
+   main.wallet {
+    background-color: #e5cf00;
+    background-image: url("p1-images/wallet.jpg");
+    background-size: 30% auto;
+    background-repeat: no-repeat;
+    background-position: 40% bottom;
+  }
+  
+  main.wallet h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 170px;
+    margin-left: 1650px;
+    margin-top: 600px;
+  }
+  
+  main.wallet p {
+    background-color: #ff9574;
+    border: 1px solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 200px;
+    font-size: 16px;
+    margin-top: -440px;
+    margin-right: 1000px;
+  }
+  
+  nav.wallet {
+    position:  absolute;
+    bottom: 0px;
+    left: 120px;
+  }
+
+  nav.wallet ul {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    list-style-type: none;
+  }
+
+  nav.wallet ul li a {
+    color: black;  
+    text-decoration: none;
+  }
+
+  nav.wallet ul li a:hover { 
+    font: italic 1em "Roboto", sans-serif;
+    font-weight: 300;
+   }
+
+   nav.wallet ul li a:visited { 
+    font: italic 1em "Roboto", sans-serif;
+    border-bottom: 1px solid black;
+    font-weight: 300;
+   }
+   
+   main.dirtyfurniture {
+    background-color: #0066ff;
+    background-image: url("p1-images/dirtyfurniture.jpg");
+    background-size: 43% auto;
+    background-repeat: no-repeat;
+    background-position: 30% bottom;
+  }
+  
+  main.dirtyfurniture h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 170px;
+    margin-left: 1650px;
+    margin-top: 600px;
+  }
+  
+  main.dirtyfurniture p {
+    background-color: #ff9574;
+    border: 1px solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 200px;
+    font-size: 16px;
+    margin-top: -440px;
+    margin-right: 1000px;
+    position: absolute;
+  }
+  
+  nav.dirtyfurniture {
+    position:  absolute;
+    bottom: 0px;
+    left: 120px;
+  }
+
+  nav.dirtyfurniture ul {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    list-style-type: none;
+  }
+
+  nav.dirtyfurniture ul li a {
+    color: black;  
+    text-decoration: none;
+  }
+
+  nav.dirtyfurniture ul li a:hover { 
+    font: italic 1em "Roboto", sans-serif;
+    font-weight: 300;
+   }
+
+   nav.dirtyfurniture ul li a:visited { 
+    font: italic 1em "Roboto", sans-serif;
+    border-bottom: 1px solid black;
+    font-weight: 300;
+   }
+
+  .home-icon {
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #bcbcbc;
+    position: absolute;
+    bottom: 40px;
+    left: -160px;
+  }
