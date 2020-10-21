@@ -66,9 +66,10 @@ body {
   main.luncheon {
     background-color: #ff9574;
     background-image: url("p1-images/luncheon.jpg");
-    background-size: 43% auto;
+    background-size: 37% auto;
     background-repeat: no-repeat;
-    background-position: 60% bottom;
+    background-position: 65% bottom;
+    position: relative;
   }
   
   main.luncheon h1 {
@@ -78,22 +79,38 @@ body {
     font-size: 170px;
     margin-top: -500px;
   }
+
+  .description-luncheon{
+    width:250px;
+    height: 350px;
+    position: relative;
+  }
   
-  main.luncheon p {
+  .description-luncheon article {
     background-color: #0066ff;
     border: 1px solid;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    width: 400px;
+    width: 250px;
     font-size: 16px;
-    margin-top: -440px;
-    margin-right:100px; 
+    position: absolute;
+    }
+
+  .description-luncheon .name{
+    background-color: #00ec7b;
+    border: 1px solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 250px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
   }
   
   nav.luncheon {
     position:  absolute;
     bottom: 0px;
-    right: 60px;
+    right: 80px;
   }
 
   nav.luncheon ul {
@@ -122,43 +139,60 @@ body {
    main.toomuch {
     background-color: #00ec7b;
     background-image: url("p1-images/toomuch.jpg");
-    background-size: 35% auto;
+    background-size: 37% auto;
     background-repeat: no-repeat;
     background-position:  bottom center;
     position: relative;
   }
   
-  .toomuch h1 {
+  main.toomuch h1 {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 170px;
+    font-size: 150px;
     margin-top: -500px;
   }
+
+  main.toomuch .much {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 150px;
+    margin-top: -50px;
+    
+    transform: rotate(90deg)
+
+  }
   
+  .description{
+    width:250px;
+    height: 300px;
+    position: relative;
+    margin-bottom: -520px;
+  }
   .description article {
     background-color: #e5cf00;
-    border-right:1px solid black;
-    border-top:1px solid black;
-    border-left:1px solid black;
+    border: 1px solid black;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     width: 250px;
     font-size: 16px;
-    margin-top:-50px;
-    position: relative;
+    position: absolute;
   }
 
   .description .name{
+    border: 1px solid black;
     display:inline-block;
     background-color: #ff9574;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     width: 250px;
     font-size: 16px;
-    margin-right:110px;
-    position: relative;
+    bottom: 0;
+    position: absolute;
+
   }
   
   nav.toomuch {
@@ -196,6 +230,7 @@ body {
     background-size: 30% auto;
     background-repeat: no-repeat;
     background-position: 40% bottom;
+    position: relative;
   }
   
   main.wallet h1 {
@@ -211,9 +246,20 @@ body {
     border: 1px solid;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    width: 300px;
+    font-size: 16px;
+    margin-top: -500px;
+    margin-right: 1000px;
+  }
+
+  main.wallet .name {
+    background-color: #ff9574;
+    border: 1px solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     width: 200px;
     font-size: 16px;
-    margin-top: -440px;
+    margin-bottom: -500px;
     margin-right: 1000px;
   }
   
@@ -249,21 +295,30 @@ body {
    main.dirtyfurniture {
     background-color: #0066ff;
     background-image: url("p1-images/dirtyfurniture.jpg");
-    background-size: 43% auto;
+    background-size: 37% auto;
     background-repeat: no-repeat;
     background-position: 30% bottom;
+    position: relative;
   }
   
   main.dirtyfurniture h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 170px;
-    margin-left: 1650px;
-    margin-top: 600px;
+    margin-bottom: 200px;
+  }
+
+  main.dirtyfurniture .h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 170px;
+    margin-left: 0px;
+    margin-top: -300px;
+    transform: rotate(90deg) 
   }
   
   main.dirtyfurniture p {
-    background-color: #ff9574;
+    background-color: #00ec7b;
     border: 1px solid;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
