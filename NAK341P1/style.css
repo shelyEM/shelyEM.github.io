@@ -7,19 +7,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #bcbcbc;
     /* flex-direction: column; */
   }
-  
-  main.independent{
-    background-color: #bcbcbc;
-  }
 
-  main.independent h1{
+
+  main h1{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 170px;
-    margin-top: -430px;
+    margin-top: -350px;
   }
 
   a.independent{
@@ -37,6 +35,7 @@ body {
     position:  absolute;
     bottom: 50px;
     left: 40px;
+    width: 300px;
   }
 
   nav.independent ul {
@@ -45,6 +44,7 @@ body {
     font-weight: 300;
     font-size: 40px;
     list-style-type: none;
+    position: relative;
   }
 
   nav.independent ul li a {
@@ -184,7 +184,6 @@ body {
 
   .description .name{
     border: 1px solid black;
-    display:inline-block;
     background-color: #ff9574;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -237,31 +236,39 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 170px;
-    margin-left: 1650px;
-    margin-top: 600px;
-  }
-  
-  main.wallet p {
-    background-color: #ff9574;
-    border: 1px solid;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    width: 300px;
-    font-size: 16px;
-    margin-top: -500px;
-    margin-right: 1000px;
+    margin-bottom: -660px;
+    margin-right:-840px;
+    text-transform: none;
   }
 
-  main.wallet .name {
+
+  .description-wallet{
+    width:250px;
+    height: 240px;
+    position: relative;
+    margin-left:-300px;
+
+  }
+  
+  .description-wallet article {
     background-color: #ff9574;
     border: 1px solid;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    width: 200px;
+    width:250px;
     font-size: 16px;
-    margin-bottom: -500px;
-    margin-right: 1000px;
-  }
+    position: absolute;
+    }
+
+  .description-wallet .name{
+    background-color: #0066ff;
+    border: 1px solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;}
+  
   
   nav.wallet {
     position:  absolute;
