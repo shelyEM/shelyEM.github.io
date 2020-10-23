@@ -28,7 +28,7 @@ body {
 
    .nav-index {
      flex:45%;
-    width: 280px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-self:flex-start;
