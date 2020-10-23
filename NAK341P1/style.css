@@ -1,26 +1,73 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
 body {
     margin: 0;
+    width: 100vw;
+    height: 100vh;
   }
-  main {
+  main.index{
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #bcbcbc;
-    /* flex-direction: column; */
+    flex-direction: column;
   }
 
-
-  main h1{
+  .header{
+    flex: 45%;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 170px;
-    margin-top: -350px;
   }
 
-  a.independent{
+   .nav-index {
+     flex:45%;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-self:flex-start;
+  }
+
+  .bottom{
+    flex:10%;
+  }
+  .nav-index .blank{
+    flex:50%;
+  }
+
+  .nav-index ul {
+    background-color: #0066ff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    list-style-type: none;
+    flex:50%;
+  }
+
+  .nav-index ul li a {
+    color: black;  
+    text-decoration: none;
+  }
+
+  .nav-index ul li a:hover { 
+    font: italic 1em "Roboto", sans-serif;
+    font-weight: 300;
+   }
+
+  .nav-index ul li a:visited { 
+    font: italic 1em "Roboto", sans-serif;
+    border-bottom: 1px solid black;
+    font-weight: 300;
+   } 
+
+  a.index{
+    flex:1;
     width: 200px;
     height: 300px;
     border-radius: 50%;
@@ -31,106 +78,93 @@ body {
     left: -160px;
   }
 
-  nav.independent {
-    position:  absolute;
-    bottom: 50px;
-    left: 40px;
-    width: 300px;
-  }
-
-  nav.independent ul {
-    background-color: #0066ff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 40px;
-    list-style-type: none;
-    position: relative;
-  }
-
-  nav.independent ul li a {
-    color: black;  
-    text-decoration: none;
-  }
-
-  nav.independent ul li a:hover { 
-    font: italic 1em "Roboto", sans-serif;
-    font-weight: 300;
-   }
-
-   nav.independent ul li a:visited { 
-    font: italic 1em "Roboto", sans-serif;
-    border-bottom: 1px solid black;
-    font-weight: 300;
-   }
-
   main.luncheon {
+    width: 100vw;
+    height: 100vh;
     background-color: #ff9574;
     background-image: url("p1-images/luncheon.jpg");
-    background-size: 37% auto;
+    background-size: 35% auto;
     background-repeat: no-repeat;
-    background-position: 65% bottom;
-    position: relative;
+    background-position: 58% bottom;
+    display: flex;
+    position: absolute;
+    
   }
   
-  main.luncheon h1 {
+  div.luncheon {
+    flex:65%;
+  }
+  div.luncheon p{
+    padding-top:50px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 170px;
-    margin-top: -500px;
   }
 
-  .description-luncheon{
-    width:250px;
-    height: 350px;
-    position: relative;
-  }
-  
-  .description-luncheon article {
+div.content{
+  flex:35%;
+  display:flex;
+  flex-direction: column;
+}
+
+.content .blank{
+  background-color: #ff9574;
+  color: #ff9574;
+  flex:5%;
+}
+.content .description-luncheon{
     background-color: #0066ff;
     border: 1px solid;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    width: 250px;
     font-size: 16px;
-    position: absolute;
-    }
-
-  .description-luncheon .name{
+    flex:30%;
+    width:250px;
+    height:300px;
+  }
+   .content .name{
     background-color: #00ec7b;
     border: 1px solid;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    width: 250px;
+    flex-basis: content;
+    padding: 5px;
     font-size: 16px;
     position: absolute;
-    bottom: 0;
+    flex:10%;
   }
+ .content .blank2{
+  background-color: #ff9574;
+  color:#ff9574;
+   flex:10%;
+ }
   
-  nav.luncheon {
+  nav.luncheon-index {
     position:  absolute;
     bottom: 0px;
-    right: 80px;
+    justify-content: flex-start;
+
   }
 
-  nav.luncheon ul {
+  nav.luncheon-index ul {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 40px;
     list-style-type: none;
   }
 
-  nav.luncheon ul li a {
+  nav.luncheon-index ul li a {
     color: black;  
     text-decoration: none;
   }
 
-  nav.luncheon ul li a:hover { 
+  nav.luncheon-index ul li a:hover { 
     font: italic 1em "Roboto", sans-serif;
     font-weight: 300;
    }
 
-   nav.luncheon ul li a:visited { 
+   nav.luncheon-index ul li a:visited { 
     font: italic 1em "Roboto", sans-serif;
     border-bottom: 1px solid black;
     font-weight: 300;
