@@ -172,67 +172,37 @@ div.content{
    }
 
    main.toomuch {
+    width: 100vw;
+    height: 100vh;
     background-color: #00ec7b;
     background-image: url("p1-images/toomuch.jpg");
     background-size: 37% auto;
     background-repeat: no-repeat;
     background-position:  bottom center;
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
   
-  main.toomuch h1 {
+  main.toomuch .top {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 150px;
-    margin-top: -500px;
+    flex:1;
+    justify-content: flex-end;
   }
 
-  main.toomuch .much {
-    position: relative;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 150px;
-    margin-top: -50px;
-    
-    transform: rotate(90deg)
+  main.toomuch .bottom{
+    flex:50%;
+    display: flex;
+    flex-direction: row;
 
   }
-  
-  .description{
-    width:250px;
-    height: 300px;
-    position: relative;
-    margin-bottom: -520px;
-  }
-  .description article {
-    background-color: #e5cf00;
-    border: 1px solid black;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    width: 250px;
-    font-size: 16px;
-    position: absolute;
-  }
 
-  .description .name{
-    border: 1px solid black;
-    background-color: #ff9574;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    width: 250px;
-    font-size: 16px;
-    bottom: 0;
-    position: absolute;
-
-  }
-  
-  nav.toomuch {
-    position:  absolute;
-    top: 500px;
-    left: 180px;
+  .bottom .nav-toomuch{
+    flex:1;
   }
 
   nav.toomuch ul {
@@ -257,6 +227,51 @@ div.content{
     border-bottom: 1px solid black;
     font-weight: 300;
    }
+
+  .bottom .much {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 150px;
+    transform: rotate(90deg);
+    flex: 1;
+  }
+  
+  .bottom .description{
+    width:250px;
+    height: 300px;
+    position: relative;
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+  }
+  .description p {
+    background-color: #e5cf00;
+    border: 1px solid black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 250px;
+    font-size: 16px;
+    position: absolute;
+    flex:1
+  }
+
+  .description .name{
+    border: 1px solid black;
+    background-color: #ff9574;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 250px;
+    font-size: 16px;
+    position: absolute;
+    flex:1;
+    bottom:0;
+  }
+  
+ 
+
+  
   
    main.wallet {
     background-color: #e5cf00;
