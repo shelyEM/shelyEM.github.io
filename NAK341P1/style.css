@@ -8,6 +8,24 @@ body {
     width: 100vw;
     height: 100vh;
   }
+  /*@media (min-height:1223px){
+    main.index{
+      display: flex;
+    }
+    main.luncheon{
+      display: flex;
+    }
+    main.toomuch{
+      display: flex;
+    }
+    main.wallet{
+      display: flex;
+    }
+    main.dirtyfurniture{
+      display: flex;
+    }
+    
+  }*/
   main.index{
     width: 100vw;
     height: 100vh;
@@ -107,44 +125,36 @@ div.content{
   flex:35%;
   display:flex;
   flex-direction: column;
+  line-height: 1.2;
 }
 
-.content .blank{
-  background-color: #ff9574;
-  color: #ff9574;
-  flex:5%;
-}
 .content .description-luncheon{
     background-color: #0066ff;
     border: 1px solid;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    flex:30%;
     width:250px;
-    height:300px;
+    order:1;
+    margin-top: 65px
   }
-   .content .name{
+.content .name{
     background-color: #00ec7b;
     border: 1px solid;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     flex-basis: content;
+    width: fit-content;
     padding: 5px;
     font-size: 16px;
-    position: absolute;
-    flex:10%;
+    order:2;
   }
- .content .blank2{
-  background-color: #ff9574;
-  color:#ff9574;
-   flex:10%;
- }
-  
-  nav.luncheon-index {
+ 
+ nav.luncheon-index {
     position:  absolute;
     bottom: 0px;
-    justify-content: flex-start;
+    margin-left: 95px;
+    margin-bottom:4px;
 
   }
 
@@ -182,29 +192,76 @@ div.content{
     position: relative;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
   
-  main.toomuch .top {
+  .top {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 150px;
-    flex:1;
     justify-content: flex-end;
+    margin-left:664px;
+    margin-top:20px;
   }
 
-  main.toomuch .bottom{
-    flex:50%;
+  .bottom{
     display: flex;
     flex-direction: row;
+    line-height: 1.2;
+  }
+
+  .bottom .much {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 150px;
+    transform: rotate(90deg);
+    order:2;
+  }
+  
+  .bottom .description{
+    width:250px;
+    height: 300px;
+    position: relative;
+    order:3;
+    display:flex;
+    flex-direction: column;
+    margin-top:350px;
+  }
+  .description p {
+    background-color: #e5cf00;
+    border: 1px solid black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 250px;
+    font-size: 16px;
+    order:1;
+  }
+
+  .description .name{
+    border: 1px solid black;
+    background-color: #ff9574;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: fit-content;
+    font-size: 16px;
+    padding: 5px;
+    font-size: 16px;
+    order:2;
 
   }
+  
+ 
 
   .bottom .nav-toomuch{
-    flex:1;
+    order:1;
+    margin-top:350px;
   }
 
+  
   nav.toomuch ul {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -228,48 +285,6 @@ div.content{
     font-weight: 300;
    }
 
-  .bottom .much {
-    position: relative;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 150px;
-    transform: rotate(90deg);
-    flex: 1;
-  }
-  
-  .bottom .description{
-    width:250px;
-    height: 300px;
-    position: relative;
-    flex: 1;
-    display:flex;
-    flex-direction: column;
-  }
-  .description p {
-    background-color: #e5cf00;
-    border: 1px solid black;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    width: 250px;
-    font-size: 16px;
-    position: absolute;
-    flex:1
-  }
-
-  .description .name{
-    border: 1px solid black;
-    background-color: #ff9574;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    width: 250px;
-    font-size: 16px;
-    position: absolute;
-    flex:1;
-    bottom:0;
-  }
-  
- 
 
   
   
