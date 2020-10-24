@@ -116,6 +116,7 @@ body {
   div.luncheon p{
     padding-top:50px;
     font-family: "Roboto", sans-serif;
+    
     font-weight: 300;
     text-transform: uppercase;
     font-size: 170px;
@@ -155,7 +156,6 @@ div.content{
     bottom: 0px;
     margin-left: 95px;
     margin-bottom:4px;
-
   }
 
   nav.luncheon-index ul {
@@ -166,8 +166,8 @@ div.content{
   }
 
   nav.luncheon-index ul li a {
-    color: black;  
     text-decoration: none;
+    color:black;
   }
 
   nav.luncheon-index ul li a:hover { 
@@ -191,11 +191,11 @@ div.content{
     background-position:  bottom center;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
   }
   
-  .top {
+  div.top {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -205,31 +205,38 @@ div.content{
     margin-left:664px;
     margin-top:20px;
   }
+  div.transparent{ 
+    background-color:yellow;
+    color: transparent;
+    width:400px;
 
+}
   .bottom{
     display: flex;
     flex-direction: row;
     line-height: 1.2;
   }
 
+  .bottom .transparency{
+    background-color: yellow;
+    order:1;
+  }
+
   .bottom .much {
-    position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 150px;
-    transform: rotate(90deg);
-    order:2;
+    writing-mode: vertical-rl;
+    order:3;
   }
   
   .bottom .description{
-    width:250px;
-    height: 300px;
-    position: relative;
-    order:3;
+    order:4;
     display:flex;
     flex-direction: column;
-    margin-top:350px;
+    margin-top:370px;
+   /* margin-left:558px;*/
   }
   .description p {
     background-color: #e5cf00;
@@ -257,8 +264,9 @@ div.content{
  
 
   .bottom .nav-toomuch{
-    order:1;
+    order:2;
     margin-top:350px;
+
   }
 
   
