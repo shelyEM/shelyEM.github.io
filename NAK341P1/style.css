@@ -97,6 +97,7 @@ body {
     left: -160px;
   }
 
+ 
   main.luncheon {
     width: 100vw;
     height: 100vh;
@@ -195,7 +196,7 @@ div.content{
     flex-wrap: wrap;
   }
   
-  div.top {
+  .top-toomuch {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -204,27 +205,29 @@ div.content{
     justify-content: flex-end;
     margin-left:664px;
     margin-top:20px;
+
+  line-height: 1.2;
   }
-  div.transparent{ 
-    background-color:yellow;
+  .transparent{ 
+    background-color:transparent;
     color: transparent;
     width:400px;
 
 }
-  .bottom{
+  .bottom-toomuch{
     display: flex;
     flex-direction: row;
     line-height: 1.2;
   }
 
-  .bottom .transparent{
-    background-color: yellow;
+  .bottom-toomuch .transparent{
+    background-color: transparent;
     color: transparent;
     width:300px;
     order:1;
   }
 
-  .bottom .much {
+  .bottom-toomuch .much {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -234,11 +237,11 @@ div.content{
     order:3;
   }
   
-  .bottom .description{
+  .bottom-toomuch .description{
     order:4;
     display:flex;
     flex-direction: column;
-    margin-top:370px;
+    margin-top:337px;
     margin-left:-25px;
    /* margin-left:558px;*/
   }
@@ -267,7 +270,7 @@ div.content{
   
  
 
-  .bottom .nav-toomuch{
+  .bottom-toomuch .nav-toomuch{
     order:2;
     margin-top:350px;
 
@@ -301,57 +304,95 @@ div.content{
   
   
    main.wallet {
+    width: 100vw;
+    height: 100vh;
     background-color: #e5cf00;
     background-image: url("p1-images/wallet.jpg");
-    background-size: 30% auto;
+    background-size: 25% auto;
     background-repeat: no-repeat;
-    background-position: 40% bottom;
-    position: relative;
+    background-position: 40% bottom ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
-  
-  main.wallet h1 {
+  .top-wallet{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+
+  line-height: 1.2;
+  }
+.top-wallet .transparent{
+  background-color: transparent;
+  color: transparent;
+  width:300px;
+  order:2;
+}
+.top-wallet .description-wallet{
+  order:1;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   padding-top:200px;
+  }
+
+  .description-wallet p{
+   background-color: #ff9574;
+   border: 1px solid;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   width:250px;
+   font-size: 16px;
+  }
+
+.description-wallet .name{
+  background-color: #0066ff;
+  border: 1px solid;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  width: fit-content;
+  font-size: 16px;
+  padding: 5px;
+}
+
+  .bottom-wallet{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+  }
+
+  .bottom-wallet .title {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 170px;
-    margin-bottom: -660px;
-    margin-right:-840px;
     text-transform: none;
+    padding-top:70px;
+    order:4
   }
 
+.bottom-wallet .transparent2{
+  order: 1;
+  background-color: transparent;
+  color: transparent;
+  width:280px;
+}
 
-  .description-wallet{
-    width:250px;
-    height: 240px;
-    position: relative;
-    margin-left:-300px;
-
+  .bottom-wallet .transparent3{
+  order: 3;
+  background-color: transparent;
+  color: transparent;
+  width:200px;
   }
   
-  .description-wallet article {
-    background-color: #ff9574;
-    border: 1px solid;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    width:250px;
-    font-size: 16px;
-    position: absolute;
-    }
-
-  .description-wallet .name{
-    background-color: #0066ff;
-    border: 1px solid;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    position: absolute;
-    bottom: 0;}
-  
-  
-  nav.wallet {
-    position:  absolute;
-    bottom: 0px;
-    left: 120px;
+  .bottom-wallet .nav-wallet{
+    order:2;
+    align-self: flex-end;
+    padding-bottom:3px;
   }
+ 
 
   nav.wallet ul {
     font-family: "Roboto", sans-serif;
@@ -452,3 +493,4 @@ div.content{
     bottom: 40px;
     left: -160px;
   }
+  
