@@ -3,21 +3,24 @@ General Styles
 * --------------------------------------- */
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-family: "Helevetica", sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: black;
 }
 
 h1,
 h2,
 h3 {
   font-size: 36px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
+  font-family: "Helevetica", sans-serif;}
 main,
 header h1,
 nav div {
   width: 85%;
   margin: auto;
+background-image: transparent;
+  border-color:1px, solid, #F54C38;
 }
 header {
   padding: 40px 0;
@@ -26,9 +29,10 @@ nav a {
   padding-right: 20px;
 }
 nav a:hover {
-  color: #333;
+  color: #F54C38;
 }
+
 nav {
-  background-color: #ccc;
+  border-color:1px, solid, #F54C38;
   padding: 12px;
 }
