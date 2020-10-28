@@ -182,29 +182,31 @@ div.content{
    }
 
    main.toomuch {
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
-    background-color: #00ec7b;
-    background-image: url("p1-images/toomuch.jpg");
-    background-size: 37% auto;
-    background-repeat: no-repeat;
-    background-position:  bottom center;
-    position: relative;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 200px;
   }
-  
-  .top-toomuch {
+
+  .toomuch-page {
+    background-color: #00ec7b;
+  }
+  main.toomuch .mag-cover img { width: 100%; }
+  main.toomuch .mag-cover {
+    z-index: 0;
     position: relative;
+    flex: 37%; }
+  .top-toomuch {
+    position: absolute;
+    top: -100px;
+    right:-10px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 150px;
-    justify-content: flex-end;
-    margin-left:664px;
-    margin-top:20px;
-
   line-height: 1.2;
   }
   .transparent{ 
@@ -214,34 +216,27 @@ div.content{
 
 }
   .bottom-toomuch{
-    display: flex;
-    flex-direction: row;
-    line-height: 1.2;
+    position: absolute;
+    top: 36px;
+    right:-28px;
   }
 
-  .bottom-toomuch .transparent{
-    background-color: transparent;
-    color: transparent;
-    width:300px;
-    order:1;
-  }
 
-  .bottom-toomuch .much {
+  .bottom-toomuch.much {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 150px;
     writing-mode: vertical-rl;
-    padding-left:280px;
-    order:3;
   }
   
-  .bottom-toomuch .description{
+  .toomuch .description{
     order:4;
     display:flex;
+    align-content: bottom;
     flex-direction: column;
-    margin-top:337px;
-    margin-left:-25px;
+    margin-top:445px;
+    margin-left:0;
    /* margin-left:558px;*/
   }
   .description p {
@@ -275,7 +270,11 @@ div.content{
 
   }
 
-  
+  nav.toomuch {
+    margin-top:445px;
+    margin-right: -100px;
+    z-index: 1;
+  }
   nav.toomuch ul {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
