@@ -99,47 +99,59 @@ body {
 
  
   main.luncheon {
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
-    background-color: #ff9574;
-    background-image: url("p1-images/luncheon.jpg");
-    background-size: 35% auto;
-    background-repeat: no-repeat;
-    background-position: 58% bottom;
     display: flex;
-    
+    flex-direction: row;
   }
   
-  div.luncheon {
-    flex:65%;
+  .luncheon-page{
+    background-color:#ff9574;
   }
-  div.luncheon p{
-    padding-top:50px;
+
+  div.luncheon{
     font-family: "Roboto", sans-serif;
-    
     font-weight: 300;
-    text-transform: uppercase;
     font-size: 170px;
+    margin-right:-600px;
+    padding-top:10px;
+    z-index:1;
   }
 
-div.content{
-  flex:35%;
-  display:flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
+  .luncheon-cover img{
+    width:700px;
+  }
 
-.content .description-luncheon{
-    background-color: #0066ff;
+  .luncheon-cover{
+    z-index:0;
+    padding-top:50px;
+    position:center;
+    width:auto;
+  }
+
+  .right{
+    display:flex;
+    flex-direction: column;
+    padding-top:50px;
+  }
+
+.right .description-luncheon{
+    display:flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+.right .description-luncheon p{
+  background-color: #0066ff;
     border: 1px solid;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
     width:250px;
     order:1;
-    margin-top: 65px
-  }
-.content .name{
+}
+
+.right .description-luncheon .name{
     background-color: #00ec7b;
     border: 1px solid;
     font-family: "Roboto", sans-serif;
@@ -151,31 +163,28 @@ div.content{
     order:2;
   }
  
- nav.luncheon-index {
-    position:  absolute;
-    bottom: 0px;
-    margin-left: 95px;
-    margin-bottom:4px;
+ .right nav.luncheon {
+   padding-top:20px;
   }
 
-  nav.luncheon-index ul {
+nav.luncheon ul {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 40px;
     list-style-type: none;
   }
 
-  nav.luncheon-index ul li a {
+nav.luncheon ul li a {
     text-decoration: none;
     color:black;
   }
 
-  nav.luncheon-index ul li a:hover { 
+nav.luncheonul li a:hover { 
     font: italic 1em "Roboto", sans-serif;
     font-weight: 300;
    }
 
-   nav.luncheon-index ul li a:visited { 
+nav.luncheon ul li a:visited { 
     font: italic 1em "Roboto", sans-serif;
     border-bottom: 1px solid black;
     font-weight: 300;
@@ -194,11 +203,16 @@ div.content{
   .toomuch-page {
     background-color: #00ec7b;
   }
-  main.toomuch .mag-cover img { width: 100%; }
+
+  main.toomuch .mag-cover img { 
+    width: 100%;
+   }
+
   main.toomuch .mag-cover {
     z-index: 0;
     position: relative;
     flex: 37%; }
+
   .top-toomuch {
     position: absolute;
     top: -100px;
@@ -206,18 +220,13 @@ div.content{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 150px;
+    font-size: 222px;
   line-height: 1.2;
   }
-  .transparent{ 
-    background-color:transparent;
-    color: transparent;
-    width:400px;
-
-}
+  
   .bottom-toomuch{
     position: absolute;
-    top: 36px;
+    top: 90px;
     right:-28px;
   }
 
@@ -226,7 +235,7 @@ div.content{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 150px;
+    font-size: 222px;
     writing-mode: vertical-rl;
   }
   
@@ -235,8 +244,9 @@ div.content{
     display:flex;
     align-content: bottom;
     flex-direction: column;
-    margin-top:445px;
+    margin-top:615px;
     margin-left:0;
+    line-height: 1.2;
    /* margin-left:558px;*/
   }
   .description p {
@@ -302,38 +312,24 @@ div.content{
   
   
    main.wallet {
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
-    background-color: #e5cf00;
-    background-image: url("p1-images/wallet.jpg");
-    background-size: 25% auto;
-    background-repeat: no-repeat;
-    background-position: 40% bottom ;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .top-wallet{
-    flex:1;
     display: flex;
     flex-direction: row;
-
-  line-height: 1.2;
   }
-.top-wallet .transparent{
-  background-color: transparent;
-  color: transparent;
-  width:300px;
-  order:2;
-}
-.top-wallet .description-wallet{
-  order:1;
-  display: flex;
-  flex-direction: column;
-  font-family: "Roboto", sans-serif;
-   font-weight: 400;
-   font-size: 16px;
-   padding-top:200px;
+  
+  .wallet-page{
+    background-color: #e5cf00;
+  }
+
+  .description-wallet{
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:1.2;
+    padding-top:215px;
   }
 
   .description-wallet p{
@@ -356,41 +352,10 @@ div.content{
   padding: 5px;
 }
 
-  .bottom-wallet{
-    display: flex;
-    flex-direction: row;
-    flex:1;
+  nav.wallet{
+    padding-top:800px;
+    z-index:1;
   }
-
-  .bottom-wallet .title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 170px;
-    text-transform: none;
-    padding-top:70px;
-    order:4
-  }
-
-.bottom-wallet .transparent2{
-  order: 1;
-  background-color: transparent;
-  color: transparent;
-  width:280px;
-}
-
-  .bottom-wallet .transparent3{
-  order: 3;
-  background-color: transparent;
-  color: transparent;
-  width:200px;
-  }
-  
-  .bottom-wallet .nav-wallet{
-    order:2;
-    align-self: flex-end;
-    padding-bottom:3px;
-  }
- 
 
   nav.wallet ul {
     font-family: "Roboto", sans-serif;
@@ -414,6 +379,28 @@ div.content{
     border-bottom: 1px solid black;
     font-weight: 300;
    }
+  
+.wallet-cover{
+width:auto;
+margin-left:-50px;
+margin-right:-100px;
+z-index:0;
+}
+
+.wallet-cover img{
+  width:450px;
+  padding-top:100px;
+
+}
+  
+div.wallet{
+  font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 170px;
+    padding-top:700px;
+    z-index:1;
+}
+  
    
    main.dirtyfurniture {
     background-color: #0066ff;
