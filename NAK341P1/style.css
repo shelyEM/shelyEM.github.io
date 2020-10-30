@@ -416,9 +416,8 @@ div.wallet{
   }
   
   nav.furniture{
-    padding-top:400px;
-    padding-right:40px;
-    padding-left:40px;
+    padding-top:415px;
+    padding-left:53px;
     z-index:1;
   }
 
@@ -470,8 +469,8 @@ div.wallet{
     transform: rotate(90deg);
     position: absolute;
     margin-top:0px;
-    padding-left: 1400px;
-    padding-right: 550px;
+    padding-left: 1428px;
+    padding-right: 598px;
   }
   
   .description-furniture{
@@ -481,8 +480,8 @@ div.wallet{
     font-weight: 400;
     line-height:1.2;
     flex-grow:2;
-    padding-top:300px;
-    padding-left:50px;
+    padding-top: 415px;
+    padding-left: 110px;
   }
 
   .description-furniture p {
