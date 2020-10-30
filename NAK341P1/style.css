@@ -402,71 +402,105 @@ div.wallet{
 }
   
    
-   main.dirtyfurniture {
+   main.furniture {
+    width: 80vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: row;
+
+    position:relative;
+  }
+
+  .furniture-page{
     background-color: #0066ff;
-    background-image: url("p1-images/dirtyfurniture.jpg");
-    background-size: 37% auto;
-    background-repeat: no-repeat;
-    background-position: 30% bottom;
-    position: relative;
   }
   
-  main.dirtyfurniture h1 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 170px;
-    margin-bottom: 200px;
+  nav.furniture{
+    padding-top:400px;
+    padding-right:40px;
+    padding-left:40px;
+    z-index:1;
   }
 
-  main.dirtyfurniture .h2 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 170px;
-    margin-left: 0px;
-    margin-top: -300px;
-    transform: rotate(90deg) 
-  }
-  
-  main.dirtyfurniture p {
-    background-color: #00ec7b;
-    border: 1px solid;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    width: 200px;
-    font-size: 16px;
-    margin-top: -440px;
-    margin-right: 1000px;
-    position: absolute;
-  }
-  
-  nav.dirtyfurniture {
-    position:  absolute;
-    bottom: 0px;
-    left: 120px;
-  }
-
-  nav.dirtyfurniture ul {
+  nav.furniture ul {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 40px;
     list-style-type: none;
   }
 
-  nav.dirtyfurniture ul li a {
+  nav.furniture ul li a {
     color: black;  
     text-decoration: none;
   }
 
-  nav.dirtyfurniture ul li a:hover { 
+  nav.furniture ul li a:hover { 
     font: italic 1em "Roboto", sans-serif;
     font-weight: 300;
    }
 
-   nav.dirtyfurniture ul li a:visited { 
+   nav.furniture ul li a:visited { 
     font: italic 1em "Roboto", sans-serif;
     border-bottom: 1px solid black;
     font-weight: 300;
    }
+
+   .furniture-cover{
+    width:auto;
+    padding-top:100px;
+   }
+   
+   .furniture-cover img{
+     width:700px;
+   }
+  
+   .dirty {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 170px;
+    margin-bottom: 200px;
+    position: absolute;
+    padding-left:1070px;
+  }
+
+  .rotate {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 170px;
+    transform: rotate(90deg);
+    position: absolute;
+    margin-top:0px;
+    padding-left: 1400px;
+    padding-right: 550px;
+  }
+  
+  .description-furniture{
+    display:flex;
+    flex-direction:column;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height:1.2;
+    flex-grow:2;
+    padding-top:300px;
+    padding-left:50px;
+  }
+
+  .description-furniture p {
+    background-color: #00ec7b;
+    border: 1px solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .description-furniture .name{
+    background-color:#e5cf00;
+    border:1px solid;
+    width:fit-content;
+    padding:5px;
+  }
+  
 
   .home-icon {
     width: 200px;
