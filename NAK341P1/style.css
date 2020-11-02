@@ -151,7 +151,7 @@ body {
     order:1;
 }
 
-.right .description-luncheon .name{
+/*.right .description-luncheon .name{
     background-color: #00ec7b;
     border: 1px solid;
     font-family: "Roboto", sans-serif;
@@ -162,6 +162,100 @@ body {
     font-size: 16px;
     order:2;
   }
+  */
+  .right div.content, .description-wallet div.content, .description div.content {
+    margin: 0;
+    padding:0;
+    color: black;
+  }
+  
+  .right .marquee{
+    position: relative;
+    width: 250px;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #00ec7b;
+    border: 1px solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    flex-basis: content;
+    height:30px;
+    padding: 5px;
+    font-size: 16px;
+    order:2;
+  }
+  .description-wallet .marquee {
+    position: relative;
+    width: 250px;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #0066ff;
+    border: 1px solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    flex-basis: content;
+    height:30px;
+    padding: 5px;
+    font-size: 16px;
+    order:2;
+  }
+  .description .marquee {
+    position: relative;
+    width: 250px;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #ff9574;
+    border: 1px solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    flex-basis: content;
+    height:30px;
+    padding: 5px;
+    font-size: 16px;
+    order:2;
+  }
+  
+  .right .track, .description-wallet .track, .description .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .description-furniture div.content {
+    margin: 0;
+    padding:0;
+    color: black;
+  }
+  
+  .description-furniture .marquee {
+    position: relative;
+    width: 200px;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #e5cf00;
+    border: 1px solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    flex-basis: content;
+    height:30px;
+    padding: 5px;
+    font-size: 16px;
+    order:2;
+  }
+  
+  .description-furniture .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+  }
+  
+ 
  
  .right nav.luncheon {
    padding-top:20px;
@@ -499,6 +593,7 @@ div.wallet{
     padding:5px;
   }
   
+  
 
   .home-icon {
     width: 200px;
@@ -509,5 +604,5 @@ div.wallet{
     position: absolute;
     bottom: 40px;
     left: -160px;
+    display:block;
   }
-  
