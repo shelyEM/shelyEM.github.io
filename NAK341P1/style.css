@@ -99,7 +99,7 @@ body {
 
  
   main.luncheon {
-    width: 80vw;
+    width:100vh;
     height: 100vh;
     display: flex;
     flex-direction: row;
