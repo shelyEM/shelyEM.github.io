@@ -181,10 +181,24 @@ body {
     order:2;
   }
   */
-  .right div.content, .description-wallet div.content, .description div.content {
+  .right div.content, .description-wallet div.content, .description div.content, .header div.content {
     margin: 0;
     padding:0;
     color: black;
+  }
+  .header .marquee{
+    position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #00ec7b;
+    border: 1px solid;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    flex-basis: content;
+    height:50px;
+    padding: 5px;
+    font-size: 40px;
+    order:2;
   }
   
   .right .marquee{
@@ -233,7 +247,7 @@ body {
     order:2;
   }
   
-  .right .track, .description-wallet .track, .description .track {
+  .right .track, .description-wallet .track, .description .track, .header .track {
     position: absolute;
     white-space: nowrap;
     will-change: transform;
@@ -533,14 +547,14 @@ div.wallet{
     display: flex;
     flex-direction: row;
   }
-  div.icon .home-icon2{
+  div.icon .home-icon3{
     order:1;
       width: 200px;
       height: 300px;
       border-radius: 50%;
       border: 1px solid black;
       background-color: #bcbcbc;
-      margin-left: -200px;
+      margin-left: -210px;
       display:block;
   }
   nav.furniture ul {
