@@ -110,12 +110,30 @@ body {
   }
 
   div.luncheon{
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 170px;
+    
     margin-right:-600px;
     padding-top:10px;
     z-index:1;
+    display:flex;
+    flex-direction: column;
+  }
+
+  div.luncheon p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 170px;
+    order:1;
+  }
+  div.luncheon .home-icon2{
+    order:2;
+      width: 200px;
+      height: 300px;
+      border-radius: 50%;
+      border: 1px solid black;
+      background-color: #bcbcbc;
+      margin-left: -160px;
+      display:block;
+      margin-top:300px;
   }
 
   .luncheon-cover img{
@@ -512,13 +530,25 @@ div.wallet{
     padding-top:415px;
     padding-left:53px;
     z-index:1;
+    display: flex;
+    flex-direction: row;
   }
-
+  div.icon .home-icon2{
+    order:1;
+      width: 200px;
+      height: 300px;
+      border-radius: 50%;
+      border: 1px solid black;
+      background-color: #bcbcbc;
+      margin-left: -200px;
+      display:block;
+  }
   nav.furniture ul {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 40px;
     list-style-type: none;
+    order:2;
   }
 
   nav.furniture ul li a {
@@ -601,8 +631,11 @@ div.wallet{
     border-radius: 50%;
     border: 1px solid black;
     background-color: #bcbcbc;
-    position: absolute;
     bottom: 40px;
     left: -160px;
     display:block;
+    position: absolute;
   }
+
+  
+  
