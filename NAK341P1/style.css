@@ -190,7 +190,7 @@ body {
     position: relative;
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #00ec7b;
+    background-color: #ff9574;
     border: 1px solid;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -438,7 +438,7 @@ body {
   
   
    main.wallet {
-    width: 80vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
