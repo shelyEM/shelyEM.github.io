@@ -3,7 +3,12 @@
 function toggleIcon() {
   $(".icon").on("click", function () {
     $(".icon").toggleClass("active")
-    $(".menu-mobile").slideToggle(300)
+    $(".menu-mobile").slideToggle(
+      {
+        direction: "up"
+      },
+      300
+    )
   })
 }
 
@@ -13,18 +18,6 @@ function closeMobileMenu() {
   })
 }
 
-
-function desktopMenu() {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 50 && $(window).width() > 768) {
-      $("nav.desktop").fadeIn(500)
-    } else {
-      $("nav.desktop").fadeOut(500)
-    }
-  })
-}
-
 //when the page loads call toggleIcon;
 $(toggleIcon)
 $(closeMobileMenu)
-$(desktopMenu)
