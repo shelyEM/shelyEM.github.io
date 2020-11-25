@@ -107,7 +107,7 @@ body {
 
 .about-txt{
   text-align: left;
-  padding-bottom:40px;
+  padding-bottom:90px;
   align-content: center;
   width: 50%;
   margin-left: 140px;
@@ -461,7 +461,16 @@ body {
 }
 
 /*gallery page mobile*/
+.gallery-head{
+  text-align: center;
+  padding-top:30px;
+}
 
+.gallery-head p{
+  font-family: "Mulish", sans-serif;
+  font-size: 105px;
+  font-weight:700; 
+}
 
 
 
