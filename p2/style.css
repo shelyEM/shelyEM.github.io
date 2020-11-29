@@ -89,6 +89,7 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 105px;
   font-weight:700;
+  color:black;
 }
 
 .about-img{
@@ -185,6 +186,7 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 105px;
   font-weight:700; 
+  color:black;
 }
 
 .info-txt{
@@ -328,6 +330,7 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 80px;
   font-weight:700;
+  color:black;
 }
 
 .catering-txt{
@@ -468,20 +471,121 @@ body {
 
 .gallery-head p{
   font-family: "Mulish", sans-serif;
-  font-size: 105px;
+  font-size: 95px;
   font-weight:700; 
+  color:black;
 }
 
+/*carousel mobile*/
+* {
+  box-sizing: border-box;
+}
 
+.gallery-col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+ 
+.slider {
+  width: 500px;
+  height:500px;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  font-weight:400;
+}
+ 
+.slides {
+  display: flex;
+  padding-top: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.slides > div:target {
+/*   transform: scale(0.8); */
+}
 
-
-
-
-
-
-
-
-
+.slides img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  max-width: 100%;
+  max-height: 390px;
+  display: block;
+  margin-left: 75px;
+}
+ 
+.slider > a {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  background: #bd2026;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+  margin-right: 5px;
+  color: white;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+ 
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
 
 
 
