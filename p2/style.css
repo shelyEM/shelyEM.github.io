@@ -511,11 +511,8 @@ body {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   
-  /*
-  scroll-snap-points-x: repeat(300px);
-  scroll-snap-type: mandatory;
-  */
 }
+
 .slides::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -542,9 +539,6 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 100px;
-}
-.slides > div:target {
-/*   transform: scale(0.8); */
 }
 
 .slides img {
@@ -587,6 +581,50 @@ body {
   }
 }
 
+.gtco-testimonials{
+  display:none;
+}
+
+/*gallery page desktop*/
+@media only screen and (min-width: 768px) {
+.slider{
+  display:none;
+}
+
+.gallery-content{
+  display:flex;
+  flex-direction: row;
+  padding-bottom:90px;
+}
+
+.gallery-head{
+  font-family: "Mulish", sans-serif;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin-top:-110px;
+  padding-right: 30px;
+  padding-left: 240px;
+}
+
+.gallery-head p{
+  font-size: 115px;
+  font-weight: 900;
+  letter-spacing: -10px;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 /* START of Mobile Menu */
