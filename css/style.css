@@ -19,20 +19,29 @@ header h1,
 nav div {
   width: 85%;
   margin: auto;
-background-image: transparent;
-  border-color:1px, solid, #F54C38;
+  background-image: transparent;
+  border-color:1px, solid, #0004EB;
 }
 header {
   padding: 40px 0;
+}
+nav{
+  margin-bottom:30px;
 }
 nav a {
   padding-right: 20px;
 }
 nav a:hover {
-  color: #F54C38;
+  color: #0004EB;
 }
 
 nav {
-  border-color:1px, solid, #F54C38;
+  border-color:1px, solid, #0004EB;
   padding: 12px;
+}
+
+.button {
+  background-color: #0004EB;
+  color: #fff;
+  padding: 6px 10px;
 }
