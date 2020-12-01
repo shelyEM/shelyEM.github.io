@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
-
+@media only screen and (min-width: 768px) {
 #stalker {
   pointer-events: none;
   position: fixed;
@@ -36,7 +36,7 @@ body {
   transition: .5s;
   background: rgba(255, 0, 0, 0.4);
 }
-
+}
 .tophome-icn {
   text-align: center;
 }
